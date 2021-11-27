@@ -16,3 +16,13 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/mascotas', 'MascotaController@index');
+
+$router->get('/mascotas/{id}', 'MascotaController@show');
+
+$router->post('/mascotas', 'MascotaController@store');
+
+$router->post('/mascotas/{id}', 'MascotaController@update');
+
+$router->delete('/mascotas/{id}', 'MascotaController@destroy');

@@ -18,7 +18,7 @@ class Mascotas extends Migration
             $table->string('NombreUsuario', 30);
             $table->string('Nombre', 30);
             $table->integer('Edad');
-            $table->float('Peso', 2, 2);
+            $table->float('Peso', 5, 2);
             $table->string('Tamano', 25);
             $table->string('Especie', 25);
             $table->string('Raza', 25);
