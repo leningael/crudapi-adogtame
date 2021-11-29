@@ -40,3 +40,15 @@ $router->post('/usuarios', 'UsuarioController@store');
 $router->post('/usuarios/{username}', 'UsuarioController@update');
 
 $router->delete('/usuarios/{username}', 'UsuarioController@destroy');
+
+//ARTICULOS
+
+$router->get('/articulos', 'ArticuloController@index');
+
+$router->get('/articulos/{id}', 'ArticuloController@show');
+
+$router->post('/articulos', 'ArticuloController@store');
+
+$router->post('/articulos/{id}', 'ArticuloController@update');
+
+$router->delete('/articulos/{id}', 'ArticuloController@destroy');
