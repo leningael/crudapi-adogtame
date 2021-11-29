@@ -17,6 +17,8 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+//MASCOTAS
+
 $router->get('/mascotas', 'MascotaController@index');
 
 $router->get('/mascotas/{id}', 'MascotaController@show');
@@ -26,3 +28,15 @@ $router->post('/mascotas', 'MascotaController@store');
 $router->post('/mascotas/{id}', 'MascotaController@update');
 
 $router->delete('/mascotas/{id}', 'MascotaController@destroy');
+
+//USUARIOS
+
+$router->get('/usuarios', 'UsuarioController@index');
+
+$router->get('/usuarios/{username}', 'UsuarioController@show');
+
+$router->post('/usuarios', 'UsuarioController@store');
+
+$router->post('/usuarios/{username}', 'UsuarioController@update');
+
+$router->delete('/usuarios/{username}', 'UsuarioController@destroy');
