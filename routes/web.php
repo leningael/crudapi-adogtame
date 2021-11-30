@@ -43,7 +43,9 @@ $router->delete('/usuarios/{username}', 'UsuarioController@destroy');
 
 //ARTICULOS
 
-$router->get('/articulos', 'ArticuloController@index');
+$router->get('/articulos','ArticuloController@index');
+
+$router->get('/articulos/recent_updates[/{max_results}]','ArticuloController@recentUpdates');
 
 $router->get('/articulos/{id}', 'ArticuloController@show');
 
